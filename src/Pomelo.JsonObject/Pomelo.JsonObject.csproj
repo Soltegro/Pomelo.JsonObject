@@ -4,18 +4,27 @@
     <Description>MySQL provider for Entity Framework Core</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
     <MinClientVersion>3.6</MinClientVersion>
-    <AssemblyName>Pomelo.JsonObject</AssemblyName>
-    <PackageId>Pomelo.JsonObject</PackageId>
+    <AssemblyName>Pomelo.JsonObject.Signed</AssemblyName>
+    <RootNamespace>Pomelo.JsonObject</RootNamespace>
+    <PackageId>Pomelo.JsonObject.Signed</PackageId>
     <PackageTags>JSON;Entity Framework Core;entity-framework-core;MySQL;EF;ORM</PackageTags>
     <PackageIconUrl>http://www.1234.sh/assets/Shared/pomelofoundation.png</PackageIconUrl>
-    <PackageProjectUrl>https://github.com/PomeloFoundation/Pomelo.JsonObject</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Soltegro/Pomelo.JsonObject</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>git://github.com/PomeloFoundation/Pomelo.JsonObject.git</RepositoryUrl>
+    <RepositoryUrl>git://github.com/Soltegro/Pomelo.JsonObject.git</RepositoryUrl>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <Version>2.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="$(MicrosoftCSharpPackageVersion)" />
     <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonPackageVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>
